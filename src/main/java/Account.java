@@ -3,11 +3,7 @@ public class Account {
     public double balance;
     public double interest;
 
-   /* public Account(double balance)
-    {
-        this.balance = balance;
-    }
-*/
+ 
     public double GetMonthlyInterest(double balance)
     {
         if (balance>=0 && balance<=100 )

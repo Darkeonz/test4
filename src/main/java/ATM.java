@@ -11,22 +11,7 @@ public class ATM {
             return null;
         }
     }
-/*
-    public Customer extract(Customer customer)
-    {
-        if (customer.validated!=true)
-        {
-            return null;
 
-        } else if (customer.income<=500000)
-        {
-            return  null;
-        }
-        else {
-            return customer;
-        }
-    }
-*/
     public double deposit(Customer customer, double depositAmount)
     {
         double income = customer.income;
@@ -70,7 +55,6 @@ public class ATM {
             System.out.println(purchaseAmount);
             double income = customer.income - totpurchase;
             updatebalance(customer, income);
-            /*double up  = updatebalance(customer, income);*/
             return totpurchase;
 
 

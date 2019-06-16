@@ -9,17 +9,17 @@ class ATMTest {
     @Test
     void insert() {
         ATM atm = new ATM();
-        Customer jakob = new Customer("Jakob","Pedersen",1500,"loyal_coupon", true);
-        atm.insert(jakob);
-        assertNotNull(jakob);
+        Customer Andreas = new Customer("Andreas","Leonhard",1500,"loyal_coupon", true);
+        atm.insert(Andreas);
+        assertNotNull(Andreas);
     }
 
     @Test
     void deposit() {
         ATM atm = new ATM();
-        Customer jakob = new Customer("Jakob","Pedersen",1500,"loyal_coupon", true);
+        Customer Andreas = new Customer("Andreas","Leonhard",1500,"loyal_coupon", true);
 
-        assertEquals(1600,atm.deposit(jakob,100));
+        assertEquals(1600,atm.deposit(Andreas,100));
     }
 
     @Test
